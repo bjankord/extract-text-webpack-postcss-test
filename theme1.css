@@ -1,0 +1,2 @@
+html{background:#000;background:red;background:var(--background-color,#000);color:#fff;color:blue;color:var(--text-color,#fff)}:root{--background-color:red;--text-color:blue}
+/*# sourceMappingURL=theme1.css.map */

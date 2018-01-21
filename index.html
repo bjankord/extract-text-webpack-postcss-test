@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Theming test</title>
+  <link href="app.css" rel="stylesheet"></head>
+  <body>
+    Theming test
+    <form>
+      <label for="themeSwitcher">Theme Switcher</label>
+      <select id="themeSwitcher">
+        <option value="app.css">Default</option>
+        <option value="theme1.css">Theme 1</option>
+        <option value="theme2.css">Theme 2</option>
+      </select>
+    </form>
+    <script>
+      document.addEventListener('DOMContentLoaded',function() {
+          document.querySelector('#themeSwitcher').onchange=changeTheme;
+      },false);
+
+      function changeTheme(event) {
+        document.querySelector('link[rel="stylesheet"]').setAttribute("href", event.target.value);
+      }
+    </script>
+  <script type="text/javascript" src="app-980b74baf65c2237630d.js"></script></body>
+</html>

@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.css"],"names":[],"mappings":"AAAA,KAAK,gBAAwC,AAAxC,wCAAwC,WAA4B,AAA5B,4BAA4B,CAAC","file":"app.css","sourcesContent":["html{background:var(--background-color,#000);color:var(--text-color,#fff)}\n/*# sourceMappingURL=app.css.map*/"]}

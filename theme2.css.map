@@ -1,0 +1,1 @@
+{"version":3,"sources":["theme2.css"],"names":[],"mappings":"AAAA,KAAK,gBAAwC,AAAxC,iBAAwC,AAAxC,wCAAwC,WAA4B,AAA5B,aAA4B,AAA5B,4BAA4B,CAAC,MAAM,yBAAyB,mBAAmB,CAAC","file":"theme2.css","sourcesContent":["html{background:var(--background-color,#000);color:var(--text-color,#fff)}:root{--background-color:green;--text-color:purple}\n/*# sourceMappingURL=theme2.css.map*/"]}
