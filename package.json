@@ -4,7 +4,7 @@
   "description": "Prototype to test extacting multiple themed CSS files via CSS custom properties through webpack + postcss",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d build",
     "start": "webpack-dev-server --progress",
     "compile:prod": "webpack --config webpack.prod.config -p"
   },
@@ -18,9 +18,11 @@
   "homepage": "https://github.com/bjankord/extract-text-webpack-postcss-test#readme",
   "devDependencies": {
     "autoprefixer": "^6.7.7",
+    "clean-webpack-plugin": "^0.1.17",
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.1",
     "file-loader": "^1.1.5",
+    "gh-pages": "^1.1.0",
     "html-webpack-plugin": "^2.30.0",
     "json-loader": "^0.5.7",
     "node-sass": "^4.5.2",

@@ -9,6 +9,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     'app': path.resolve(path.join('src', 'app')),
+    'theme1': path.resolve(path.join('src', 'themedApp1')),
+    'theme2': path.resolve(path.join('src', 'themedApp2')),
   },
   module: {
     rules: [
@@ -36,7 +38,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new ExtractTextPlugin('[name]-[hash].css'),
+    new ExtractTextPlugin('[name].css'),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src', 'index.html'),
       chunks: ['app'],

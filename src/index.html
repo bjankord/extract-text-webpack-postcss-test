@@ -8,5 +8,22 @@
   </head>
   <body>
     Theming test
+    <form>
+      <label for="themeSwitcher">Theme Switcher</label>
+      <select id="themeSwitcher">
+        <option value="app.css">Default</option>
+        <option value="theme1.css">Theme 1</option>
+        <option value="theme2.css">Theme 2</option>
+      </select>
+    </form>
+    <script>
+      document.addEventListener('DOMContentLoaded',function() {
+          document.querySelector('#themeSwitcher').onchange=changeTheme;
+      },false);
+
+      function changeTheme(event) {
+        document.querySelector('link[rel="stylesheet"]').setAttribute("href", event.target.value);
+      }
+    </script>
   </body>
 </html>
